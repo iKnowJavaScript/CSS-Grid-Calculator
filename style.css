@@ -1,0 +1,44 @@
+.calcContainer {
+    overflow-x: auto;
+    width: 330px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .calcDisplay {
+    padding: 30px;
+    border-bottom: 1px solid black;
+    text-align: right;
+  }
+
+  .calcButtons {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+
+  .buttonBlue {
+    background-color: rgb(149, 149, 236)!important;
+  }
+  
+  .buttonGreen {
+    background-color: rgb(166, 231, 67)!important;
+  }
+
+  .buttonLarge {
+    grid-column: 1 / span 3;
+  }
+
+  .calcButton {
+    background-color: #757474;
+    color: #d6d6d6;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .calcButton:hover {
+    background-color: rgb(136, 127, 116);
+  }
