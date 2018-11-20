@@ -20,13 +20,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
   }
-
-  .buttonBlue {
-    background-color: rgb(241, 150, 134)!important;
-    color: white!important;
-  }
   
-  .buttonGreen {
+  .equal-sign {
     background-color: rgb(166, 231, 67)!important;
     color: white!important;
   }
@@ -34,7 +29,17 @@
   .buttonLarge {
     grid-column: 1 / span 3;
     color: black;
+    background-color: rgb(241, 150, 134)!important;
+    color: white!important;
   }
+
+  .buttonMedium {
+    grid-column: 1 / span 2;
+    color: black;
+    background-color: rgb(241, 150, 134)!important;
+    color: white!important;
+  }
+
 
   .calcButton {
     background-color: #757474;
