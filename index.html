@@ -9,25 +9,26 @@
 </head>
 <body>
   <div class="calcContainer">
-    <div class="calcDisplay">0123456789</div>
+    <div class="calcDisplay" data-value="0"></div>
 
     <div class="calcButtons">
-      <button class="buttonBlue buttonLarge calcButton" type="button" >C</button>
-      <button class="calcButton" type="button">&divide;</button>
-      <button data-value class="calcButton" type="button">7</button>
-      <button data-value class="calcButton" type="button">8</button>
-      <button data-value class="calcButton" type="button">9</button>
-      <button class="calcButton" type="button">X</button>
-      <button data-value class="calcButton" type="button">4</button>
-      <button data-value class="calcButton" type="button">5</button>
-      <button data-value class="calcButton" type="button">6</button>
-      <button class="calcButton" type="button">-</button>
-      <button data-value class="calcButton" type="button">1</button>
-      <button data-value class="calcButton" type="button">2</button>
-      <button data-value class="calcButton" type="button">3</button>
-      <button class="calcButton" type="button">+</button>
-      <button data-value class="buttonLarge calcButton" type="button">0</button>
-      <button class="buttonGreen calcButton" type="button">=</button>
+      <button class="all-clear buttonLarge calcButton" type="button" value="all-clear">C</button>
+      <button class="calcButton operator" type="button" value="/">&divide;</button>
+      <button data-value class="calcButton" type="button" value="7">7</button>
+      <button data-value class="calcButton" type="button" value="8">8</button>
+      <button data-value class="calcButton" type="button" value="9">9</button>
+      <button class="calcButton operator" type="button" value="*">X</button>
+      <button data-value class="calcButton" type="button" value="4">4</button>
+      <button data-value class="calcButton" type="button" value="5">5</button>
+      <button data-value class="calcButton" type="button" value="6">6</button>
+      <button class="calcButton operator" type="button" value="-">-</button>
+      <button data-value class="calcButton" type="button" value="1">1</button>
+      <button data-value class="calcButton" type="button" value="2">2</button>
+      <button data-value class="calcButton" type="button" value="3">3</button>
+      <button class="calcButton operator" type="button" value="+">+</button>
+      <button data-value class="buttonMedium calcButton" type="button" value="0">0</button>
+      <button data-value class="calcButton decimal" type="button" value=".">.</button>
+      <button class="calcButton equal-sign operator" type="button" value="=">=</button>
     </div>
   </div>
   <script src="script.js"></script>
