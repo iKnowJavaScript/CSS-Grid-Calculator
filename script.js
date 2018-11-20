@@ -20,13 +20,13 @@ function inputDigit(digit) {
 
 function inputDecimal(dot) {
     if (calculator.waitingForSecondOperand === true) return;
-  
+
     // If the `displayValue` does not contain a decimal point
     if (!calculator.displayValue.includes(dot)) {
-      // Append the decimal point
-      calculator.displayValue += dot;
+        // Append the decimal point
+        calculator.displayValue += dot;
     }
-  }
+}
 
 function handleOperator(nextOperator) {
     const { firstOperand, displayValue, operator } = calculator
@@ -34,7 +34,6 @@ function handleOperator(nextOperator) {
 
     if (operator && calculator.waitingForSecondOperand) {
         calculator.operator = nextOperator;
-        console.log(calculator);
         return;
     }
 
@@ -50,7 +49,6 @@ function handleOperator(nextOperator) {
 
     calculator.waitingForSecondOperand = true;
     calculator.operator = nextOperator;
-    console.log(calculator);
 }
 
 const performCalculation = {
@@ -70,7 +68,6 @@ function resetCalculator() {
     calculator.firstOperand = null;
     calculator.waitingForSecondOperand = false;
     calculator.operator = null;
-    console.log(calculator);
 }
 
 function updateDisplay() {
@@ -81,7 +78,7 @@ function updateDisplay() {
 updateDisplay();
 
 const keys = document.querySelector('.calcButtons');
-keys.addEventListener('click', event => {
+keys.addEventListener('click', (event) => {
     const { target } = event; // is equivalent to const target = event.target;
     if (!target.matches('button')) {
         return; // exit func if I'm not clicking button.
@@ -94,12 +91,12 @@ keys.addEventListener('click', event => {
     }
 
     if (target.classList.contains('decimal')) {
-        inputDecimal(target.innerHTML);
+        inputDecimal(target.value);
         updateDisplay();
         return;
     }
 
-    if (target.classList.contains('.all-clear')) {
+    if (target.classList.contains('all-clear')) {
         resetCalculator();
         updateDisplay();
         return;
