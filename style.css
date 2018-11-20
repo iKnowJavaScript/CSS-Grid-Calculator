@@ -4,6 +4,8 @@
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
   }
 
   .calcDisplay {
@@ -20,15 +22,18 @@
   }
 
   .buttonBlue {
-    background-color: rgb(149, 149, 236)!important;
+    background-color: rgb(241, 150, 134)!important;
+    color: white!important;
   }
   
   .buttonGreen {
     background-color: rgb(166, 231, 67)!important;
+    color: white!important;
   }
 
   .buttonLarge {
     grid-column: 1 / span 3;
+    color: black;
   }
 
   .calcButton {
